@@ -6,4 +6,6 @@ viewer.dataSources.add(Cesium.KmlDataSource.load(''));
 
 
 //視点の変更
-viewer.zoomTo(viewer.entities);
+viewer.camera.flyTo({
+    destination : Cesium.Cartesian3.fromDegrees(135.69, 34.69, 10000.0)});
+
