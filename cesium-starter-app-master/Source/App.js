@@ -2,7 +2,7 @@ var viewer = new Cesium.Viewer('cesiumContainer');
 
 
 //kml読み込み
-viewer.dataSources.add(Cesium.KmlDataSource.load(''));
+viewer.dataSources.add(Cesium.KmlDataSource.load('https://oza-pong.github.io/codeforikoma/cesium-starter-app-master/Source/Ikoma_sample.kml'));
 
 
 //視点の変更
