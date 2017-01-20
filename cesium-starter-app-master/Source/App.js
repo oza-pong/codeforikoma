@@ -1,9 +1,3 @@
-var viewer = new Cesium.Viewer('cesiumContainer');
-
-
-//kml読み込み
-viewer.dataSources.add(Cesium.KmlDataSource.load(''));
-
 var viewer = new Cesium.Viewer('cesiumContainer', {
 imageryProvider: new Cesium.OpenStreetMapImageryProvider({
 url: 'http://cyberjapandata.gsi.go.jp/xyz/std/',
@@ -12,6 +6,8 @@ credit: new Cesium.Credit('地理院タイル', '', 'http://maps.gsi.go.jp/devel
 baseLayerPicker: false
 });
 
+//kml読み込み
+viewer.dataSources.add(Cesium.KmlDataSource.load(''));
 
 
 //視点の変更
